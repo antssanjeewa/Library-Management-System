@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="ie_11_scroll">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="hhhwidth=device-width, initial-scale=1">
+        <title>LBMS</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/elib_style.css">
+    </head>
+    <body>
+        <!-- Top menu -->
+        <div class="show-menu">
+            <a href="#" class="shadow-top-down">+</a>
+        </div>
+        <nav class="main-menu shadow-top-down">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#elib_home" class="scroll_effect">Home</a></li>
+                <li><a href="#elib_category" class="scroll_effect">Category</a></li>
+                <li><a href="#elib_search" class="scroll_effect">Search</a></li>
+                <li><a href="#elib_about" class="scroll_effect">About</a></li>
+                 <li><a href="loginto.php">Admin Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Home -->
+        <section id="elib_home">
+            <div class="container">
+                <div class="elib_home_inner_wapper">
+                    <h1 class="text-center">LbMS</h1>
+                </div>
+                <div class="elib_home_inner_wapper">
+                    <h2 class="text-center">Library Management System</h2>
+                    <p class="text-center">
+                        This is a simple Library Management System   
+                        
+                        </p>
+                </div>
+                <div class="elib_home_inner_wapper btn_wapper">
+                    <div class="col-sm-6">
+                        <a href="#elib_category" class="btn col-xs-12 scroll_effect shadow-top-down">
+                            <i class="fa fa-align-justify"></i> Category
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#elib_search" class="btn col-xs-12 scroll_effect shadow-top-down">
+                            <i class="fa fa-search"></i> Search
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- catogaries -->
+        <section id="elib_category">
+            <div class="container-fluid">
+                <header class="template_header">
+                    <h1 class="text-center"><span>...</span> Category <span>...</span></h1>
+                </header>
+                <div class="col-sm-12">
+                     <div class="col-sm-6 col-lg-3 feature-box" style="
+                    background-color: gray;">
+                        <div class="feature-box-inner" style="
+                        background-color: grey;">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <p>
+                                -Books-<br/>
+                                Students are capable of Lending and Refering the books of any Engineering field.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 feature-box" style="
+                    background-color: gray;">
+                        <div class="feature-box-inner" style="
+                        background-color: grey;">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <p>
+                               -Magazines-<br/>
+                               Daily updated Magazines of various Engineering fields that include new inventions, new reasearch results,Innovations etc.
+                            </p>
+                        </div>
+                    </div>
+                     <div class="col-sm-6 col-lg-3 feature-box" style="
+                    background-color: gray;">
+                        <div class="feature-box-inner" style="
+                        background-color: grey;">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <p>
+                                -Thesis-<br/>
+                                Various Thesis of vast Engineering fields conducted by Graduated Students of our University and other organizations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 feature-box" style="
+                    background-color: gray;">
+                        <div class="feature-box-inner" style="
+                        background-color: grey;">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <p>
+                                -Research Papers-<br/>
+                                Researches done by the Final Year Students of the University, Graduated Students doing MSc and researches done by all the departments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Search -->
+        <section id="elib_search">
+            <div class="container">
+                <header class="template_header">
+                    <h1 class="text-center"><span>...</span> Search <span>...</span></h1>
+                </header>
+                <div class="elib_search_text_wapper">
+                    <p>
+                        Please enter Name Or ID of the book
+                    </p>
+                </div>
+                
+                <div class="search">
+                <form action="BSearch.php" method="post">
+                     <table>
+                            <th class="libg">
+                                <td>
+                                  <input type="text" placeholder="Book_Name or Book_ID" name="searchfield"
+                                style="width: 600px;margin-left:0%;
+                                background-color:white;"
+                                    >  
+                                </td>
+                                <td>
+                                      <input type="submit" name="search-button" value="Search" 
+                                style="background-color: lightgray;
+                                margin-left: 30%;"
+                                      />
+                                </td>
+                            </th>
+                        </table>
+                     </form>  
+                </div>
+
+
+               
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="elib_about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <header class="template_header">
+                            <h1 class="text-center"><span>...</span> About <span>...</span></h1>
+                        </header>
+                       
+                    </div>
+                </div>
+                 <div class="text-center">
+
+                    <p>
+                        This is a simple Engineering Library Management System.<br/>    This System includes Books, Magazines, Thesis and Research Papers that includes 
+                        Chemical and Process Engineering, Computer Engineering, Mechanical Engineering, Civil Engineering, Electrical and Electronics Engineering and Production Engineering fields.  
+
+                    </p>
+                    <p class="text-center">
+                            <i class="fa fa-map-marker"></i> Faculty of Engineering,University of Peradeniya<br />
+                            <i class="fa fa-envelope"></i> englibstf@pdn.ac.lk<br />
+                            <i class="fa fa-phone"></i> 94-081- 2393318<br/>
+                    </p>
+                </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="
+        background-color: bisque;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 footer-copyright">
+                        <p>Copyright &copy; 2016 <a href="#" target="_parent">E-Fac_ELb</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- require plugins -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+        <!-- template mo config script -->
+        <script src="js/elib_scripts.js"></script>
+    </body>
+</html>
